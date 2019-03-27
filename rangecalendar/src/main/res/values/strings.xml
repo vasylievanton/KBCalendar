@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KBCalendar</string>
+
+    <string name="cdrp_mon">Mon</string>
+    <string name="cdrp_tue">Tue</string>
+    <string name="cdrp_wed">Wed</string>
+    <string name="cdrp_thu">Thu</string>
+    <string name="cdrp_fri">Fri</string>
+    <string name="cdrp_sat">Sat</string>
+    <string name="cdrp_sun">Sun</string>
+
+</resources>
