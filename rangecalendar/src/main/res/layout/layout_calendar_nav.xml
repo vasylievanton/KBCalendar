@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@+id/rlHeaderCalendar"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlHeaderCalendar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingBottom="@dimen/dateTitlePaddingBottom">
@@ -8,31 +8,36 @@
 
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/imgVNavLeft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:padding="4dp"
         android:src="@drawable/ic_left_selector" />
 
     <kingbird.ru.rangecalendar.customviews.CustomTextView
         android:id="@+id/tvYearTitle"
         android:layout_width="match_parent"
-        android:gravity="center"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:gravity="center"
         android:tag="dateTitle"
-        android:text="FEBRUARY 2014"
         android:textSize="@dimen/text_size_title" />
 
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/imgVNavRight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:padding="4dp"
         android:src="@drawable/ic_right_selector" />
 
 
