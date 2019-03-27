@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
         calendar.setSelectedDateRange(startSelectionDate, endSelectionDate);
 
-        Calendar current = Calendar.getInstance();
-        calendar.setCurrentMonth(current);
+//        Calendar current = Calendar.getInstance();
+        calendar.setCurrentMonth(startSelectionDate);
     }
 
 }
