@@ -2,21 +2,53 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rlHeaderCalendar"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingBottom="@dimen/dateTitlePaddingBottom">
+    android:layout_height="wrap_content">
 
 
-    <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/imgVNavLeft"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:padding="4dp"
-        android:src="@drawable/ic_left_selector" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgVNavLeft"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_left_selector" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="24dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgVNavRight"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_right_selector" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
 
     <kingbird.ru.rangecalendar.customviews.CustomTextView
         android:id="@+id/tvYearTitle"
@@ -27,18 +59,5 @@
         android:gravity="center"
         android:tag="dateTitle"
         android:textSize="@dimen/text_size_title" />
-
-    <android.support.v7.widget.AppCompatImageView
-        android:id="@+id/imgVNavRight"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:padding="4dp"
-        android:src="@drawable/ic_right_selector" />
-
 
 </RelativeLayout>
