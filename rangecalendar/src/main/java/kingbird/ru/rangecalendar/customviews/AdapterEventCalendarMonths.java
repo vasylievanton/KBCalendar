@@ -143,6 +143,12 @@ public class AdapterEventCalendarMonths extends PagerAdapter {
         notifyDataSetChanged();
     }
 
+    public void setSelectedPeriodDate(Calendar minSelectedDate, Calendar maxSelectedDate, int startDay, int endDay) {
+        dateRangeCalendarManager.setMinSelectedDate(minSelectedDate);
+        dateRangeCalendarManager.setMaxSelectedDate(maxSelectedDate);
+        notifyDataSetChanged();
+    }
+
     public Calendar getMinSelectedDate() {
         return dateRangeCalendarManager.getMinSelectedDate();
     }

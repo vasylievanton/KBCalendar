@@ -246,6 +246,27 @@ public class DateRangeCalendarView extends LinearLayout {
         adapterEventCalendarMonths.setSelectedDate(startDate, endDate);
     }
 
+
+    /**
+     * Sets start and end date.<br>
+     * <B>Note:</B><br>
+     * You can not set null start date with valid end date.<br>
+     * You can not set end date before start date.<br>
+     * If you are setting custom month range than do not call this before calling (@method setVisibleMonthRange).<br>
+     *
+     * @param startDate Start date
+     * @param endDate   End date
+     */
+    public void setSelectedPeriodDateRange(@Nullable Calendar startDate, @Nullable Calendar endDate, int startDay, int endDay) {
+        if (startDate == null && endDate != null) {
+            throw new RuntimeException("Start date can not be null if you are setting end date.");
+        } else if (endDate != null && endDate.before(startDate)) {
+            throw new RuntimeException("Start date can not be after end date.");
+        }
+
+        adapterEventCalendarMonths.setSelectedPeriodDate(startDate, endDate, startDay, endDay);
+    }
+
     /**
      * To get start date.
      */
